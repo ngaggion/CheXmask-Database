@@ -2,13 +2,13 @@
 
 This repository accompanies the CheXmask Database, a large-scale dataset of anatomical segmentation masks for chest x-ray images. It includes segmentation masks for both original resolutions and preprocessed versions, detailed segmentation metrics, and associated pseudo-landmarks for the contours of the lungs and heart. 
 
-![CheXmask](figures/histogram_complete.png)
+![CheXmask](figures/histogram_CheXmask.png)
 
 ## Dataset
 
 CheXmask is an extensive and uniformly annotated set of chest radiographs, compiled from six public databases: CANDID-PTX, ChestX-ray8, Chexpert, MIMIC-CXR-JPG, Padchest, and VinDr-CXR. Our dataset comprises 676,803 anatomical segmentation masks, derived from images processed using the HybridGNet model to ensure consistent, high-quality segmentation.
 
-Each dataset associated with this research is available as a CSV file. Each CSV file contains image IDs and corresponding pre-processed segmentation masks in Run-Length Encoding (RLE) format. Please note that the original chest X-ray images are not included in this dataset due to proprietary and privacy considerations. To access the dataset, please visit the PhysioNet website.
+Each dataset associated with this research is available as a CSV file. Each CSV file contains image IDs and corresponding pre-processed segmentation masks in Run-Length Encoding (RLE) format. Please note that the original chest X-ray images are not included in this dataset due to proprietary and privacy considerations. To access the dataset, please visit the following PhysioNet repo: [https://physionet.org/content/chexmask-cxr-segmentation-data](https://physionet.org/content/chexmask-cxr-segmentation-data).
 
 ## Code
 
@@ -41,15 +41,15 @@ Please refer to the source code of the HybridGNet for additional information: [h
 
 ## Citations 
 
-If you use this dataset or code in your research, please cite the following paper:
+If you use this dataset or code in your research, please cite the following PhysioNet repository:
 
 ```
-@article{,
-  title={},
-  author={},
-  journal={},
-  year={},
-  publisher={}
+@misc{gaggion2023chexmaskPhysioNet,
+  author = {Gaggion, N. and Mosquera, C. and Aineseder, M. and Mansilla, L. and Milone, D. and Ferrante, E.},
+  title = {{CheXmask Database: a large-scale dataset of anatomical segmentation masks for chest x-ray images (version 0.1)}},
+  year = {2023},
+  howpublished = {PhysioNet},
+  note = {\url{https://doi.org/10.13026/dx54-8351}}
 }
 ```
 
@@ -66,11 +66,3 @@ title = {Improving anatomical plausibility in medical image segmentation via hyb
 journal = {{IEEE} Transactions on Medical Imaging}
 }
 ```
-
-## Limitations and Considerations
-
-Please be aware of the following limitations and considerations related to this dataset and code:
-
-- The dataset does not include the original chest X-ray images due to proprietary and privacy considerations. Researchers need to obtain the images from the respective datasets mentioned in the manuscript.
-
-For any questions, issues, or suggestions related to this dataset and code, please feel free to contact us or open an issue in the repository.
